@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Papaya salad</title>
+  <link rel="stylesheet" href="./dist/output.css" />
+</head>
+
+<body>
+
+  <header class="pt-2.5 pb-2.5 flex items-center justify-between max-w-[1440px] mx-auto border-b flex-col lg:flex-row">
+    <a href="#" class="flex items-center font-semibold text-black">
+      <div class="flex items-center justify-center text-[32px] h-16 w-16">
+        😋
+      </div>
+      <div class="flex-1">One Two</div>
+    </a>
+    <nav class="flex justify-center w-full lg:w-auto">
+      <ul id="menu" class="hidden md:flex list-none gap-[5px] w-full md:w-auto md:flex-row md:items-center">
+        <li>
+          <a href="#"
+            class="inline-block px-5 py-2.5 text-[#555] hover:bg-[#F1F1F1] rounded-[10px] w-full md:w-auto no-underline">Home</a>
+        </li>
+        <li>
+          <a href="#menu-burgers"
+            class="inline-block  px-5 py-2.5 text-[#555] hover:bg-[#F1F1F1] rounded-[10px] w-full md:w-auto no-underline">Menu</a>
+        </li>
+        <li>
+          <a href="#menu-burgers"
+            class="inline-block px-[30px] py-[10px] bg-[#0A61AE] text-[#F1F1F1] rounded-[10px] transition ease-in-out duration-300 hover:bg-black active:bg-red-500 w-full md:w-auto no-underline">Order
+            Now</a>
+        </li>
+      </ul>
+      <!-- Mobile Toggle Button -->
+      <button id="mobile-toggle" class="block md:hidden p-2.5 absolute top-[20px] right-[20px]"
+        onclick="toggleMobileMenu();" aria-expanded="false" aria-controls="menu">
+        <img src="./images/mobileToggle.svg" alt="Open Menu" />
+      </button>
+    </nav>
+  </header>
+  <main>
+    <section class="flex flex-col lg:flex-row max-w-[1440px] mx-auto my-[30px] gap-[30px] px-[30px]">
+      <div class="flex-1 bg-[#E2F8FF] rounded-[30px] p-[30px] flex flex-col justify-center">
+        <h1 class="font-lobster text-[64px] leading-none mb-2.5">
+          OneTwo
+        </h1>
+        <p>
+          Feeling famished after conquering those waves? Look no further than
+          One Two, your one-stop shop for gourmet grub that's as
+          classic as a beach sunset and as shiny as a chrome fender!
+        </p>
+        <div class="mt-5 mb-2.5">
+          <a href="./menu.pdf" target="_blank"
+            class="inline-block px-[30px] py-[10px] bg-[#0A61AE] text-[#F1F1F1] rounded-[10px] transition ease-in-out duration-300 hover:bg-black active:bg-red-500 mr-2.5 mb-2.5 no-underline">Full
+            Menu</a>
+        </div>
+      </div>
+      <div class="flex-1 bg-[#FFDA4B] rounded-[30px] px-[30px] flex justify-center items-center">
+        <img
+          src="https://media.istockphoto.com/id/1327398987/th/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2/%E0%B8%AA%E0%B8%A5%E0%B8%B1%E0%B8%94%E0%B8%A1%E0%B8%B0%E0%B8%A5%E0%B8%B0%E0%B8%81%E0%B8%AD%E0%B8%AA%E0%B8%B5%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%A7%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B9%80%E0%B8%AB%E0%B8%99%E0%B8%B5%E0%B8%A2%E0%B8%A7%E0%B8%9A%E0%B8%99%E0%B9%82%E0%B8%95%E0%B9%8A%E0%B8%B0%E0%B9%84%E0%B8%A1%E0%B9%89-%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%94%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%A1.jpg?s=612x612&w=0&k=20&c=PkrT-J-SSvNN3bVFE1YxOekhvJPKJ-tYFPMomVlXAuc="
+          alt="Burger Truck" class="w-full object-cover" />
+      </div>
+    </section>
+    <section id="menu-burgers" class="featured max-w-[1440px] mx-auto my-[30px] gap-[30px] px-[30px]">
+      <h2 class="text-[64px] leading-none mb-2.5 text-center p-[30px]">
+        100% Organic Food
+      </h2>
+      <div class="flex flex-col lg:flex-row gap-[30px]">
+        <article class="bg-[#FFDA4B] p-[30px] rounded-[30px] flex-1">
+          <figure class="pt-[10%] overflow-hidden">
+            <img
+              src="https://media.istockphoto.com/id/1213788186/th/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2/%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B9%84%E0%B8%97%E0%B8%A2-%E0%B8%A2%E0%B9%8D%E0%B8%B2%E0%B8%A1%E0%B8%B0%E0%B8%A5%E0%B8%B0%E0%B8%81%E0%B8%AD.jpg?s=612x612&w=0&k=20&c=xMo8skeQ-kPKvtwoSwKQkmr6SjPMJ_-a2pJb-Pv0xzg="
+              alt="The All-American"
+              class="w-full transition ease-linear duration-[3000ms] hover:transform hover:scale-[1.2]" />
+          </figure>
+          <h3 class="text-[32px] font-semibold leading-none mb-5 mt-5 mb-2.5">
+            Som Tam pla ra
+          </h3>
+          <p class="mb-2.5">
+            Whether you're a local or just passing through,
+            we invite you to taste the deliciousness you can't miss!
+            At our restaurant, each plate of papaya salad with fermented crab and fish sauce is meticulously prepared.
+            Our fermented fish sauce is carefully selected from renowned sources,
+            perfectly blended with fresh crab in a rich, flavorful sauce
+            that’s spicy, sour, and sweet—everything in one bite!.
+
+          </p>
+        </article>
+        <article class="bg-[#FFDA4B] p-[30px] rounded-[30px] flex-1">
+          <figure class="pt-[10%] overflow-hidden">
+            <img
+              src="https://media.istockphoto.com/id/1198248990/th/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2/%E0%B8%AA%E0%B9%89%E0%B8%A1%E0%B8%95%E0%B9%8D%E0%B8%B2%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%94%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%A1%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%9B%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%A1%E0%B8%B0%E0%B8%A5%E0%B8%B0%E0%B8%81%E0%B8%AD%E0%B8%A1%E0%B8%B0%E0%B9%80%E0%B8%82%E0%B8%B7%E0%B8%AD%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B8%96%E0%B8%B1%E0%B9%88%E0%B8%A7%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%A7%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%96%E0%B8%B1%E0%B9%88%E0%B8%A7%E0%B8%A5%E0%B8%B4%E0%B8%AA%E0%B8%87.jpg?s=612x612&w=0&k=20&c=XkP9VFefzkD2b_cHL4rYehwaIxObz4iSqd2_al7DhtE="
+              alt="Bacon Cheeseburger"
+              class="w-full transition ease-linear duration-[3000ms] hover:transform hover:scale-[1.2]" />
+          </figure>
+          <h3 class="text-[32px] font-semibold leading-none mb-5 mt-5 mb-2.5">
+            Som Tam thai
+          </h3>
+          <p class="mb-2.5">
+            If you’re looking for a dish with bold, authentic Thai flavors, this is the place you must visit! Our Thai
+            papaya salad is meticulously prepared using fresh ingredients every day. We use crisp, sweet green papaya,
+            combined with bird’s eye chilies, garlic, and freshly squeezed lime juice, creating a perfect balance of
+            sour, spicy, and sweet in every bite!
+          </p>
+        </article>
+        <article class="bg-[#FFDA4B] p-[30px] rounded-[30px] flex-1">
+          <figure class="pt-[10%] overflow-hidden">
+            <img
+              src="https://media.istockphoto.com/id/665789838/th/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2/%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A2%E0%B8%B0%E0%B9%83%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%84%E0%B8%81%E0%B9%88%E0%B8%81%E0%B8%A3%E0%B8%AD%E0%B8%9A%E0%B8%AA%E0%B8%B5%E0%B8%97%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%9A%E0%B8%B5%E0%B8%84%E0%B8%B4%E0%B8%A7.jpg?s=612x612&w=0&k=20&c=hGr_iwczOAG8rDzUrmNLhl-m_ucc_4stELTEIJOuMi0="
+              alt="The Aloha Burger"
+              class="w-full transition ease-linear duration-[3000ms] hover:transform hover:scale-[1.2]" />
+          </figure>
+          <h3 class="text-[32px] font-semibold leading-none mb-5 mt-5 mb-2.5">
+            Grill chicken
+          </h3>
+          <p class="mb-2.5">
+            If you're looking for a dish that's perfectly grilled with a mouthwatering aroma, our grilled chicken is the
+            answer you shouldn't miss! Our chicken is marinated with a special blend of spices, absorbing all the
+            flavors into every piece. Then, it’s grilled over a charcoal fire to perfection, making the meat tender,
+            juicy, and infused with the fragrant aroma of herbs and charcoal—guaranteed to make you crave more.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Include your JavaScript file -->
+  <script src="./scripts.js"></script>
+</body>
+
+</html>
+<!-- overflow: hidden -->
